@@ -27,4 +27,4 @@ module.exports = {
 # 使用
 npm install 安装依赖包
 
-node app 启动服务
+node run start 启动服务
