@@ -4,6 +4,7 @@ var walk = require('walk');
 var logger = require('log4js').getLogger();
 var path = require('path');
 var fs = require('fs');
+var chalk = require('chalk');
 
 var base = 'routes';
 
@@ -11,7 +12,7 @@ function registerRoute(routes){
     Object.keys(routes).forEach(function(method){
         var route = routes[method];
         Object.keys(route).forEach(function(path){
-            logger.info('register ' + path + ', method: ' + method);
+            logger.info('register ' + chalk.red(method) + ': ' + path);
             router[method](path, route[path]);
         });
     });

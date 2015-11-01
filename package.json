@@ -13,6 +13,7 @@
   "author": "zeron",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.1",
     "express": "^4.13.3",
     "log4js": "^0.6.27",
     "mockjs": "^0.1.10",
